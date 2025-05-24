@@ -1,0 +1,6 @@
+echo "Hostname:    $(hostname)"
+echo "Image:       debugatron"
+echo "User:        $(whoami)"
+echo "IP:          $(hostname -I | cut -d' ' -f1)"
+echo "Exteranl IP: $(curl -s -4 ifconfig.me)"
+echo "──────────────────────────────────────────────"
